@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  product_description: MyText
+  price: 9.99
+  quantity_in_stock: 1
+  image_url: MyString
+  rating: 1.5
+  brand: MyString
+  reviews: 1
+
+two:
+  product_name: MyString
+  product_description: MyText
+  price: 9.99
+  quantity_in_stock: 1
+  image_url: MyString
+  rating: 1.5
+  brand: MyString
+  reviews: 1

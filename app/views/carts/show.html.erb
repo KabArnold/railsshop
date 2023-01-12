@@ -1,0 +1,17 @@
+<% if notice %>
+  <aside id= "notice" > <%= notice %> </aside>
+<% end %>
+
+<% unless @cart.line_items.empty? %>
+<h2>Your Cart</h2>
+<ul>
+  <% @cart.line_items.each do |line_item| %>
+    <li> <%= line_item.quantity %> &times; <%= line_item.product.product_name %> </li> <%= number_to_currency(line_item.total_price) %>
+  <% end %>
+</ul>
+
+<P>
+Total: <%= number_to_currency(@cart.total_price) %>
+
+<%= button_to 'Empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'} %>
+<% end %>
